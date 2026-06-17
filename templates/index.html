@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>InsightForge</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            InsightForge
+        </div>
+
+        <nav>
+
+            <div class="nav-item active">
+                Documents
+            </div>
+
+            <div class="nav-item">
+                Search
+            </div>
+
+            <div class="nav-item">
+                Activity
+            </div>
+
+            <div class="nav-item">
+                Settings
+            </div>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="header">
+
+            <h1>Documents</h1>
+
+            <p>
+                Upload and manage your knowledge base.
+            </p>
+
+        </div>
+
+        <div class="upload-box">
+
+            <h3>Upload PDF Documents</h3>
+
+            <input
+                type="file"
+                id="pdfFile"
+                accept=".pdf"
+            >
+
+            <br><br>
+
+            <button
+                onclick="uploadPDF()"
+            >
+                Upload PDF
+            </button>
+
+        </div>
+
+        <div class="section">
+
+            <div class="section-title">
+                Uploaded Documents
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="documentsTable">
+
+                    <tr>
+                        <td>No documents uploaded yet</td>
+                        <td>-</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="section">
+
+            <div class="section-title">
+                Ask Anything
+            </div>
+
+            <input
+                id="question"
+                type="text"
+                placeholder="Ask a question about your documents..."
+            >
+
+            <button
+                class="ask-btn"
+                onclick="askQuestion()"
+            >
+                Ask
+            </button>
+
+        </div>
+
+        <div class="section">
+
+            <div class="section-title">
+                Answer
+            </div>
+
+            <div id="answer">
+                Answers will appear here.
+            </div>
+
+            <br>
+
+            <div id="sources"></div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
