@@ -2,18 +2,18 @@
 
 ## 1. Why this approach?
 
-I chose the **Premium Home Page** track and built InsightForge as a focused AI document-intelligence product rather than creating a generic marketing page. The page uses a static HTML/CSS implementation because it was the fastest way to ship a responsive result without adding unnecessary framework or build complexity.
+I chose the **Premium Home Page** track and built InsightForge as a focused AI document-intelligence product rather than a generic marketing page. I used static HTML/CSS because it was the fastest way to ship a responsive result without unnecessary framework or build complexity.
 
-I deliberately kept the experience centered around one product flow: **upload → understand → ask**. The hero communicates the value proposition immediately, while the workspace mockup shows the product instead of relying only on marketing copy. I chose this over a heavier component framework because the challenge evaluates UI craft, judgment, responsiveness, and shipping speed more than framework choice.
+The experience is centered around one product flow: **upload → understand → ask**. The hero communicates the value proposition immediately, while the workspace mockup shows the product rather than relying only on marketing claims. I chose this over a heavier component framework because the challenge evaluates UI craft, judgment, responsiveness, and shipping speed.
 
 ## 2. Time-limit trade-off
 
-Under the time limit, I prioritized the core landing-page experience, responsive layout, product showcase, navigation, and restrained interactions over building a fully functional backend deployment. The live submission therefore focuses on the working home page and its product presentation.
+Under the time limit, I prioritized the core landing-page experience, responsive layout, product showcase, navigation, and restrained interactions over deploying the full backend. The complete InsightForge application runs locally, including document ingestion, retrieval, and the AI/RAG workflow. The submitted live URL therefore focuses on the responsive frontend because the backend exceeded the memory available on the free hosting environment.
 
-With a real week, I would connect the landing-page CTA to the full InsightForge application, add more deliberate accessibility testing, expand mobile-specific polish, and add automated checks for responsive layouts and broken assets.
+With a real week, I would deploy the backend with an appropriate memory budget, connect the landing-page CTA to the full application, add more accessibility testing, expand mobile-specific polish, and add automated checks for responsive layouts and broken assets. I can demonstrate the complete local application and explain the backend architecture and RAG pipeline during the follow-up.
 
 ## 3. AI usage and personal verification
 
-I used AI tools during implementation for coding assistance, UI iteration, debugging, and troubleshooting deployment issues. I did not treat generated output as final without testing it. I personally reviewed the implementation, ran the application locally, inspected browser console/network behavior, verified the responsive layout, and fixed the GitHub Pages asset-path issue that initially caused the CSS and JavaScript not to load.
+I used AI tools for coding assistance, UI iteration, debugging, and deployment troubleshooting. I did not treat generated output as final without testing it. I personally reviewed the implementation, ran the application locally, inspected browser behavior, verified the responsive layout, and fixed the GitHub Pages asset-path issue that initially prevented the CSS and JavaScript from loading.
 
-The final page was manually checked at mobile and desktop sizes, and I verified that the deployed GitHub Pages URL loads the intended styled interface. The design also avoids fabricated testimonials, fake user counts, and invented logos.
+I also verified the deployed GitHub Pages URL manually. The design avoids fabricated testimonials, fake user counts, and invented logos.
